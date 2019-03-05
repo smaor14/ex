@@ -5,8 +5,8 @@ channel = connection.channel()
 
 
 channel.queue_declare(queue='message')
-path = input("Enter db path: ")
-formating = input("Enter the output file format: ")
+path = input("Enter db path: ").lower
+formating = input("Enter the output file format: ").lower
 
 
 data = {
